@@ -1,7 +1,7 @@
-name: actions-trial
+name: kadai4
 on: [push]
 jobs:
- check-bats-version:
+ kadai4-runn:
   runs-on: ubuntu-latest
   steps:
   - run: echo "first action!"
