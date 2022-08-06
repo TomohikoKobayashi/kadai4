@@ -9,13 +9,13 @@ fi
 #文字などを入れていないか
 expr $1 + $2 > /dev/null 2>$1
  if [ $? -ge 2 ];then
- echo "数字（整数)を入れてください"
+ echo "数字（整数)を入れてください" 1>&2
  exit 1
 fi
 
 #1以上の数値か
 if test "$1" -lt "1" || test "$2" -lt "1" ; then
-  echo "1より大きな数を入れてください"
+  echo "1より大きな数を入れてください" 1>&2
   exit 1
 fi
 
