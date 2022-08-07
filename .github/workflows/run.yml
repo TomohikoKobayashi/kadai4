@@ -1,7 +1,10 @@
 name: kadai4
 on: [push]
 jobs:
- kadai4-runn:
+ kadai4-run:
   runs-on: ubuntu-latest
   steps:
-  - run: echo "first action!"
+  - uses: actions/checkout@v3
+  - run: ./kadai4_test.sh
+        pwd
+
